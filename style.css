@@ -134,6 +134,15 @@ header {
     color: #0077b6;
     margin-bottom: 0.5rem;
 }
+.servico-card i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0077b6;
+    transition: transform 0.3s;
+}
+.servico-card:hover i {
+    transform: scale(1.2);
+}
 
 /* Rodapé */
 footer {
@@ -199,3 +208,4 @@ footer {
         height: 300px;
     }
 }
+
