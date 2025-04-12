@@ -3,12 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Menu Mobile */
 header {
-    background: #0077b6;
+    background: #89531b;
     padding: 1rem;
     position: fixed;
     width: 100%;
@@ -22,13 +22,13 @@ header {
 }
 
 .logo {
-    color: white;
+    color: #d2bfa7;
     font-weight: bold;
     font-size: 1.2rem;
 }
 
 .menu-mobile {
-    color: white;
+    color: #d2bfa7;
     font-size: 1.5rem;
     cursor: pointer;
     display: block;
@@ -41,7 +41,7 @@ header {
     top: 60px;
     left: 0;
     width: 100%;
-    background: #0077b6;
+    background: #89531b;
 }
 
 .menu-links.active {
@@ -49,7 +49,7 @@ header {
 }
 
 .menu-links a {
-    color: white;
+    color: #d2bfa7;
     padding: 1rem;
     text-decoration: none;
     border-top: 1px solid rgba(255,255,255,0.1);
@@ -63,25 +63,76 @@ header {
     display: flex;
     flex-direction: column;
    /* min-height: 100vh; */
+   .hero {
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    padding: 7rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+.hero {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #89531b;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.botao-consulta {
+    background: #d2bfa7;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.botao-consulta:hover {
+    background: #e7b374;
+    transform: translateY(-2px);
+}
+
 }
 
 .hero-content {
     max-width: 600px;
     margin: 0 auto;
+    color:#89531b;
 }
 
 .foto-perfil {
-    width: 200px;
+    width: 150px;
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #0077b6;
+    border: 5px solid #89531b;
     margin: 2rem auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
+
+
 .botao-consulta {
-    background: #ff7b00;
-    color: white;
+    background: #d2bfa7;
+    color: #89531b;
     padding: 12px 25px;
     border-radius: 5px;
     text-decoration: none;
@@ -92,7 +143,7 @@ header {
 }
 
 .botao-consulta:hover {
-    background: #e56d00;
+    background: #d2bfa7;
 }
 
 /* Seções */
@@ -103,7 +154,7 @@ header {
 .section h2 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #0077b6;
+    color: #89531b;
 }
 
 .bg-cinza {
@@ -119,7 +170,7 @@ header {
 }
 
 .servico-card {
-    background: white;
+    background: #d2bfa7;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -131,13 +182,13 @@ header {
 }
 
 .servico-card h3 {
-    color: #0077b6;
+    color: #89531b;
     margin-bottom: 0.5rem;
 }
 .servico-card i {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #0077b6;
+    color: #89531b;
     transition: transform 0.3s;
 }
 .servico-card:hover i {
@@ -146,8 +197,8 @@ header {
 
 /* Rodapé */
 footer {
-    background: #0077b6;
-    color: white;
+    background: #89531b;
+    color: #d2bfa7;;
     text-align: center;
     padding: 1.5rem;
 }
@@ -204,8 +255,8 @@ footer {
     }
     
     .foto-perfil {
-        width: 300px;
-        height: 300px;
+        width: 180px;
+        height: 200px;
     }
 }
 
