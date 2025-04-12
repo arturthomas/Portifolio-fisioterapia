@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Gistesy';
+    src: url('fonts/Gistesy.ttf') format('truetype');
+}
 /* Reset CSS */
 * {
     margin: 0;
@@ -57,6 +61,23 @@ header {
 }
 
 /* Hero Section */
+.logo{
+    font-family: 'Gistesy', cursive;
+    font-size: 1,5rem;
+}
+
+.hero {
+    
+    background: linear-gradient(135deg, #fce7d2,#f7f5f3);
+    padding: 7rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    animation: fadeInUp 1s ease-out;
+}
+
 .hero {
     padding: 6rem 1rem 2rem;
     text-align: center;
@@ -188,7 +209,7 @@ header {
 .servico-card i {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #89531b;
+    color: #89541be1;
     transition: transform 0.3s;
 }
 .servico-card:hover i {
@@ -260,3 +281,47 @@ footer {
     }
 }
 
+
+.botao-consulta {
+    background: #d2bfa7;
+    color: #89531b;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem 0;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.botao-consulta:hover {
+    background: #e7b374;
+    transform: scale(1.05);
+}
+
+.menu-links a.active {
+    border-bottom: 2px solid #e7b374;
+}
+
+.whatsapp-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.whatsapp-fixo:hover {
+    transform: scale(1.1);
+}
+
+.foto-perfil {
+    max-width: 90%;
+    height: auto;
+}
